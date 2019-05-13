@@ -66,7 +66,7 @@ The rules of the game are:
 
 
 ## Setup/Installation
-To view the website, click or copy () to your browser and load it or:
+To view the website, click or copy (https://mucciz.github.io/pig-dice/) to your browser and load it or:
 * Clone this repository
 * Open a HTML file
 * Open web browser of choice
