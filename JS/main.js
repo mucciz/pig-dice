@@ -1,6 +1,5 @@
 //initialize global variables.
 var scores, currentScore, activePlayer, gamePlaying;
-//define the game start function statement that resests everything at start
 function gameStart() {
     scores = [0, 0];
     activePlayer = 0;
@@ -20,7 +19,12 @@ function gameStart() {
     document.querySelector('.col').classList.remove('active');
     document.querySelector('.col').classList.remove('active');
     document.querySelector('.col').classList.add('active');
+    // document.getElementById('sorry-1').classList.remove('sorry-1');
 }
+
+//function that rests everything on game start
+gameStart();
+
 //Anonymous function that starts the game.
 document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
@@ -43,7 +47,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         }
     }
 });
-//add onclick addEventListener
+
+
 document.querySelector('.btn-hold').addEventListener('click', function() {
     if (gamePlaying) {
         // Add CURRENT score to GLOBAL score
@@ -65,7 +70,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         }
     }
 });
-//define the next player function
+
+
 function nextPlayer() {
     //Next player (use Tenary operator)
     activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
@@ -79,5 +85,5 @@ function nextPlayer() {
 
     document.querySelector('.dice').style.display = 'none';
 }
-//call the gameStart function
+
 document.querySelector('.btn-new').addEventListener('click', gameStart);
