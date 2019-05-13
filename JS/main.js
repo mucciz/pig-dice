@@ -74,3 +74,5 @@ function nextPlayer() {
 
     document.querySelector('.dice').style.display = 'none';
 }
+//call the gameStart function
+document.querySelector('.btn-new').addEventListener('click', gameStart);
