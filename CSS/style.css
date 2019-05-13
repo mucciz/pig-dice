@@ -10,3 +10,29 @@ body {
   background-size: cover;
   color: #fff;
 }
+.tm-name {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+  font-size: calc(2vw + 2vw + .5vmin);
+  font-weight: 1;
+}
+.tm-score {
+  font-size: calc(1.7vw + 1.7vw + .5vmin);
+  margin-bottom: 50px;
+  font-weight: 1;
+}
+.tm-current-box {
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+.tm-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #fff;
+    font-size: calc(0.7vw + 0.7vw + .5vmin);
+    font-weight: 1;
+}
