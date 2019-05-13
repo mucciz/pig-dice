@@ -73,7 +73,7 @@ To view the website, click or copy () to your browser and load it or:
 
 ## Known Bugs
 The game does not notify a user if a 1 is rolled.
-The
+The active class does not switch too.
 
 ## Technologies Used
 * HTML
