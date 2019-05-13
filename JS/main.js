@@ -38,3 +38,25 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         }
     }
 });
+//add onclick addEventListener
+document.querySelector('.btn-hold').addEventListener('click', function() {
+    if (gamePlaying) {
+        // Add CURRENT score to GLOBAL score
+        scores[activePlayer] += currentScore;
+
+        // Update the UI
+        document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+
+        // Check if player won the game
+        if (scores[activePlayer] >= 100) {
+            document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
+            document.querySelector('.dice').style.display = 'none';
+            document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
+            document.querySelector('.player-' + activePlayer + '-panel').classList.remove('active');
+            gamePlaying = false;
+        } else {
+            //Next player
+            nextPlayer();
+        }
+    }
+});
