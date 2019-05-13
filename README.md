@@ -83,6 +83,6 @@ The
 * JQUERY
 
 ## Licence
-MIT License
+MIT License (https://github.com/mucciz/pig-dice/community/license/new?branch=master&template=mit)
 
 Copyright (c) [2019] [Mucciz]
