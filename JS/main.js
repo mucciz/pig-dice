@@ -7,19 +7,11 @@ function gameStart() {
     gamePlaying = true;
 
     document.querySelector('.dice').style.display = 'none';
-
-    document.getElementById('score-0').textContent = '0';
-    document.getElementById('score-1').textContent = '0';
-    document.getElementById('current-0').textContent = '0';
-    document.getElementById('current-1').textContent = '0';
-    document.getElementById('name-0').textContent = 'Player 1';
-    document.getElementById('name-1').textContent = 'Player 2';
     document.querySelector('.col').classList.remove('winner');
     document.querySelector('.col').classList.remove('winner');
     document.querySelector('.col').classList.remove('active');
     document.querySelector('.col').classList.remove('active');
     document.querySelector('.col').classList.add('active');
-    // document.getElementById('sorry-1').classList.remove('sorry-1');
 }
 
 //function that rests everything on game start
