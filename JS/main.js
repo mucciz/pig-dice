@@ -15,6 +15,8 @@ function gameStart() {
     document.getElementById('current-1').textContent = '0';
     document.getElementById('name-0').textContent = 'Player 1';
     document.getElementById('name-1').textContent = 'Player 2';
+    document.querySelector('.col').classList.remove('winner');
+    document.querySelector('.col').classList.remove('winner');
 }
 //Anonymous function that starts the game.
 document.querySelector('.btn-roll').addEventListener('click', function() {
