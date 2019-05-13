@@ -60,3 +60,17 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         }
     }
 });
+//define the next player function
+function nextPlayer() {
+    //Next player (use Tenary operator)
+    activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
+    currentScore = 0;
+
+    document.getElementById('current-0').textContent = '0';
+    document.getElementById('current-1').textContent = '0';
+
+    document.querySelector('.col').classList.toggle('active');
+    document.querySelector('.col').classList.toggle('active');
+
+    document.querySelector('.dice').style.display = 'none';
+}
